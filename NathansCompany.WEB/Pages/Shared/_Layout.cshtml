@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Bell Residential LLC</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-shell navigation">
+            <a class="logo-link" asp-page="/Index" aria-label="Bell Residential LLC home">
+                <span class="logo-mark"><img src="~/images/BellResidentialLogo.png" asp-append-version="true" alt="" /></span>
+                <span class="brand-wordmark">BELL <span>RESIDENTIAL</span> LLC</span>
+            </a>
+            <nav id="main-navigation" aria-label="Main navigation">
+                <a asp-page="/Index">Home</a>
+                <a asp-page="/Services">Services</a>
+                <a asp-page="/Projects">Projects</a>
+            </nav>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="main-navigation" aria-expanded="false"><span></span></button>
+            <a class="nav-contact" asp-page="/Contact">Contact us</a>
+        </div>
+    </header>
+
+    <main>@RenderBody()</main>
+
+    <footer class="site-footer">
+        <div class="site-shell footer-content">
+            <a class="logo-link footer-logo" asp-page="/Index" aria-label="Bell Residential LLC home">
+                <span class="logo-mark"><img src="~/images/BellResidentialLogo.png" asp-append-version="true" alt="" /></span>
+                <span class="brand-wordmark">BELL <span>RESIDENTIAL</span> LLC</span>
+            </a>
+            <p>Building better spaces, one project at a time.</p>
+            <p>&copy; @DateTime.Now.Year Bell Residential LLC</p>
+        </div>
+    </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

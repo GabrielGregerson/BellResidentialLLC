@@ -1,0 +1,66 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="home-hero">
+    <div class="site-shell home-hero-content">
+        <p class="home-kicker">WELCOME TO BELL RESIDENTIAL LLC</p>
+        <h1>Small homes and buildings, built with care.</h1>
+        <p>We build practical, well-made spaces for the way you live and work. From compact homes to small buildings, we bring clear communication and quality craftsmanship to every project.</p>
+        <div class="home-actions">
+            <a class="home-button home-button-primary" asp-page="/Contact">Contact us</a>
+            <a class="home-button home-button-secondary" asp-page="/Services">Our services</a>
+        </div>
+    </div>
+</section>
+
+<section class="home-about">
+    <div class="site-shell home-two-column">
+        <div>
+            <p class="home-kicker">ABOUT US</p>
+            <h2>A straightforward approach to small-scale building.</h2>
+        </div>
+        <div class="home-body-copy">
+            <p>Bell Residential LLC specializes in homes, buildings, and property improvements. We focus on thoughtful planning, dependable work, and creating spaces that are useful, comfortable, and built to last.</p>
+            <a class="home-inline-link" asp-page="/Services">Learn about our services <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="home-services">
+    <div class="site-shell">
+        <div class="home-section-heading">
+            <div>
+                <p class="home-kicker">OUR SERVICES</p>
+                <h2>How we can help.</h2>
+            </div>
+            <a class="home-inline-link" asp-page="/Services">View all services <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="home-service-grid">
+            <article>
+                <h3>Small homes</h3>
+                <p>Comfortable, practical homes designed around your needs.</p>
+            </article>
+            <article>
+                <h3>Small buildings</h3>
+                <p>Well-built spaces for work, storage, hobbies, and more.</p>
+            </article>
+            <article>
+                <h3>Custom projects</h3>
+                <p>Thoughtful solutions made to fit your property and goals.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <div class="site-shell">
+        <p class="home-kicker">LET'S GET STARTED</p>
+        <h2>Have a project in mind?</h2>
+        <p>Reach out and we will be happy to talk through your needs.</p>
+        <a class="home-button home-button-primary" asp-page="/Contact">Get in touch</a>
+        <a class="home-facebook-link" href="https://www.facebook.com/people/Bell-Residential-LLC/100091550928434/" target="_blank" rel="noopener noreferrer">Follow Bell Residential LLC on Facebook <span aria-hidden="true">&nearr;</span></a>
+    </div>
+</section>
